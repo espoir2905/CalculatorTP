@@ -59,6 +59,34 @@ namespace CalculatorUnitTest
             int actual = engine.Division(a, b);
             Assert.AreEqual(div, actual);
         }
+        [TestMethod]
+        public void TestMethodSquareRoot()
+        {
+            int a = 25;
+            
+            int RacineCarre =5;
+            CalculatorEngine engine = new CalculatorEngine();
+           double actual = engine.SquareRoot(a);
+            Assert.AreEqual(RacineCarre, actual);
+        }
+        [TestMethod]
+        public void TestMethodSquare()
+        {
+            int a = 5;
+            int Carre = 25;
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.Square(a);
+            Assert.AreEqual(Carre, actual);
+        }
+        [TestMethod]
+        public void TestMethodpercentage()
+        {
+            int a = 50;
+            Double pourcentage = 0.5;
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.percentage(a);
+            Assert.AreEqual(pourcentage, actual);
+        }
 
     }
 }

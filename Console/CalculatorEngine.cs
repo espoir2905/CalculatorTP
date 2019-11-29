@@ -33,5 +33,17 @@ namespace Console
             }
             return res;
         }
+        public virtual double SquareRoot(double a)
+        {
+            return  Math.Sqrt (a);
+        }
+        public virtual double Square(double a)
+        {
+            return Math.Pow(a, 2);
+        }
+        public virtual double percentage(double a)
+        {
+            return a/100;
+        }
     }
 }
