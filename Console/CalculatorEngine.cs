@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Console
 {
-    public class CalculatorEngine
+    public  class CalculatorEngine
     {
-        public int addition(int a,int b)
+        public virtual int Addition(int a,int b)
         {
             return a+b;
         }
-       public int subdivision(int a, int b)
+       public virtual int Substraction(int a, int b)
         {
             return a-b;
         }
-       public int Multiplication(int a, int b)
+       public virtual int Multiplication(int a, int b)
         {
             return a * b;
         }
-        public int Division(int val1, int val2)
+        public virtual int Division(int val1, int val2)
         {
             int res;
             if (val2 != 0)

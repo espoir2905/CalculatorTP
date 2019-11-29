@@ -14,7 +14,7 @@ namespace CalculatorUnitTest
             int b = 2;
             int exp = 3;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.addition(a, b);
+            int actual = engine.Addition(a, b);
             Assert.AreEqual(exp, actual);
           
             
@@ -26,7 +26,7 @@ namespace CalculatorUnitTest
             int b = 10;
             int sub = -5;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.subdivision(a, b);
+            int actual = engine.Substraction(a, b);
             Assert.AreEqual(sub, actual);
         }
         [TestMethod]
