@@ -8,19 +8,19 @@ namespace Console
 {
     public class CalculatorEngine
     {
-        public int add(int a,int b)
+        public int addition(int a,int b)
         {
             return a+b;
         }
-       public int sub(int a, int b)
+       public int subdivision(int a, int b)
         {
             return a-b;
         }
-       public int Mul(int a, int b)
+       public int Multiplication(int a, int b)
         {
             return a * b;
         }
-        public int Div(int val1, int val2)
+        public int Division(int val1, int val2)
         {
             int res;
             if (val2 != 0)

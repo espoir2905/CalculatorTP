@@ -14,7 +14,7 @@ namespace CalculatorUnitTest
             int b = 2;
             int exp = 3;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.add(a, b);
+            int actual = engine.addition(a, b);
             Assert.AreEqual(exp, actual);
           
             
@@ -26,37 +26,37 @@ namespace CalculatorUnitTest
             int b = 10;
             int sub = -5;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.sub(a, b);
+            int actual = engine.subdivision(a, b);
             Assert.AreEqual(sub, actual);
         }
         [TestMethod]
-        public void TestMethodMul()
+        public virtual void TestMethodMul()
         {
             int a = 5;
             int b = 10;
             int mul = 50;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Mul(a, b);
+            int actual = engine.Multiplication(a, b);
             Assert.AreEqual(mul, actual);
         }
         [TestMethod]
-        public void TestMethodDiv()
+        public virtual void TestMethodDiv()
         {
             int a = 10;
             int b = 10;
             int div = 1;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Div(a, b);
+            int actual = engine.Division(a, b);
             Assert.AreEqual(div, actual);
         }
         [TestMethod]
-        public void TestMethodDivByZero()
+        public virtual void TestMethodDivByZero()
         {
             int a = 6;
             int b = 0;
             int div = int.MinValue;
             CalculatorEngine engine = new CalculatorEngine();
-            int actual = engine.Div(a, b);
+            int actual = engine.Division(a, b);
             Assert.AreEqual(div, actual);
         }
 
