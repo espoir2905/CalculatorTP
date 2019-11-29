@@ -8,7 +8,7 @@ namespace CalculatorUnitTest
     public class CalculatorEngineUnitTest
     {
         [TestMethod]
-        public void TestMethodadd()
+        public virtual void TestMethodaddition()
         {
             int a = 1;
             int b = 2;
@@ -20,7 +20,7 @@ namespace CalculatorUnitTest
             
         }
         [TestMethod]
-        public void TestMethodSub()
+        public void TestMethodSubstraction()
         {
             int a = 5;
             int b = 10;
@@ -30,7 +30,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(sub, actual);
         }
         [TestMethod]
-        public virtual void TestMethodMul()
+        public virtual void TestMethodMuliplication()
         {
             int a = 5;
             int b = 10;
@@ -40,7 +40,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(mul, actual);
         }
         [TestMethod]
-        public virtual void TestMethodDiv()
+        public virtual void TestMethodDivision()
         {
             int a = 10;
             int b = 10;
@@ -50,7 +50,7 @@ namespace CalculatorUnitTest
             Assert.AreEqual(div, actual);
         }
         [TestMethod]
-        public virtual void TestMethodDivByZero()
+        public virtual void TestMethodDivisionByZero()
         {
             int a = 6;
             int b = 0;
