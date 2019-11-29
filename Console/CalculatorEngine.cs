@@ -41,7 +41,7 @@ namespace Console
         {
             return Math.Pow(a, 2);
         }
-        public virtual double percentage(double a)
+        public virtual double Percentage(double a)
         {
             return a/100;
         }
